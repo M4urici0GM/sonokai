@@ -54,6 +54,10 @@ function! sonokai#get_palette(style, colors_override)
           \ 'purple':     ['#b39df3',   '176'],
           \ 'grey':       ['#7f8490',   '246'],
           \ 'grey_dim':   ['#595f6f',   '240'],
+          \ 'orange1':    ['#CF8822',   '215'],
+          \ 'green1':     ['#A8C026',   '179'],
+          \ 'aqua':       ['#0ED38C',   '110'],
+          \ 'linen':      ['#CBAD96',   '110'],
           \ 'none':       ['NONE',      'NONE']
           \ }
   elseif a:style ==# 'gap'
