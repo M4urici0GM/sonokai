@@ -256,7 +256,7 @@ call sonokai#highlight('Operator', s:palette.red, s:palette.none)
 call sonokai#highlight('Title', s:palette.red, s:palette.none, 'bold')
 call sonokai#highlight('Tag', s:palette.orange, s:palette.none)
 call sonokai#highlight('Delimiter', s:palette.fg, s:palette.none)
-call sonokai#highlight('Todo', s:palette.bg0, s:palette.blue, 'bold')
+call sonokai#highlight('Todo', s:palette.green1, s:palette.none, 'italic')
 if s:configuration.disable_italic_comment
   call sonokai#highlight('Comment', s:palette.grey, s:palette.none)
   call sonokai#highlight('SpecialComment', s:palette.grey, s:palette.none)
@@ -272,30 +272,42 @@ call sonokai#highlight('Fg', s:palette.fg, s:palette.none)
 call sonokai#highlight('Grey', s:palette.grey, s:palette.none)
 call sonokai#highlight('Red', s:palette.red, s:palette.none)
 call sonokai#highlight('Orange', s:palette.orange, s:palette.none)
+call sonokai#highlight('Orange1', s:palette.orange1, s:palette.none)
 call sonokai#highlight('Yellow', s:palette.yellow, s:palette.none)
 call sonokai#highlight('Green', s:palette.green, s:palette.none)
+call sonokai#highlight('Green1', s:palette.green1, s:palette.none)
 call sonokai#highlight('Blue', s:palette.blue, s:palette.none)
+call sonokai#highlight('Aqua', s:palette.aqua, s:palette.none)
 call sonokai#highlight('Purple', s:palette.purple, s:palette.none)
 if s:configuration.enable_italic
   call sonokai#highlight('RedItalic', s:palette.red, s:palette.none, 'italic')
   call sonokai#highlight('OrangeItalic', s:palette.orange, s:palette.none, 'italic')
+  call sonokai#highlight('Orange1Italic', s:palette.orange1, s:palette.none, 'italic')
   call sonokai#highlight('YellowItalic', s:palette.yellow, s:palette.none, 'italic')
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none, 'italic')
+  call sonokai#highlight('Green1Italic', s:palette.green1, s:palette.none, 'italic')
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none, 'italic')
+  call sonokai#highlight('AquaItalic', s:palette.aqua, s:palette.none, 'italic')
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none, 'italic')
 else
   call sonokai#highlight('RedItalic', s:palette.red, s:palette.none)
   call sonokai#highlight('OrangeItalic', s:palette.orange, s:palette.none)
+  call sonokai#highlight('Orange1Italic', s:palette.orange1, s:palette.none)
   call sonokai#highlight('YellowItalic', s:palette.yellow, s:palette.none)
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none)
+  call sonokai#highlight('Green1Italic', s:palette.green1, s:palette.none)
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none)
+  call sonokai#highlight('AquaItalic', s:palette.aqua, s:palette.none)
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none)
 endif
 call sonokai#highlight('RedSign', s:palette.red, s:palette.none)
 call sonokai#highlight('OrangeSign', s:palette.orange, s:palette.none)
+call sonokai#highlight('Orange1Sign', s:palette.orange1, s:palette.none)
 call sonokai#highlight('YellowSign', s:palette.yellow, s:palette.none)
 call sonokai#highlight('GreenSign', s:palette.green, s:palette.none)
+call sonokai#highlight('Green1Sign', s:palette.green1, s:palette.none)
 call sonokai#highlight('BlueSign', s:palette.blue, s:palette.none)
+call sonokai#highlight('AquaSign', s:palette.aqua, s:palette.none)
 call sonokai#highlight('PurpleSign', s:palette.purple, s:palette.none)
 if s:configuration.diagnostic_text_highlight
   call sonokai#highlight('ErrorText', s:palette.none, s:palette.diff_red, 'undercurl', s:palette.red)
@@ -358,11 +370,11 @@ let g:sonokai_lsp_kind_color = [
       \ ["Enum", "Blue"],
       \ ["EnumMember", "Purple"],
       \ ["Event", "Yellow"],
-      \ ["Field", "Green"],
+      \ ["Field", "Orange1"],
       \ ["File", "Green"],
       \ ["Folder", "Yellow"],
       \ ["Function", "Green"],
-      \ ["Interface", "Blue"],
+      \ ["Interface", "Aqua"],
       \ ["Key", "Red"],
       \ ["Keyword", "Red"],
       \ ["Method", "Green"],
@@ -373,7 +385,7 @@ let g:sonokai_lsp_kind_color = [
       \ ["Object", "Yellow"],
       \ ["Operator", "Red"],
       \ ["Package", "Red"],
-      \ ["Property", "Orange"],
+      \ ["Property", "Orange1"],
       \ ["Reference", "Yellow"],
       \ ["Snippet", "Yellow"],
       \ ["String", "Yellow"],
@@ -451,7 +463,7 @@ highlight! link TSEnvironment Macro
 highlight! link TSEnvironmentName Type
 highlight! link TSError Error
 highlight! link TSException Red
-highlight! link TSField Orange
+highlight! link TSField Orange1
 highlight! link TSFloat Purple
 highlight! link TSFuncBuiltin Green
 highlight! link TSFuncMacro Green
@@ -471,10 +483,10 @@ highlight! link TSNamespace BlueItalic
 highlight! link TSNone Fg
 highlight! link TSNumber Purple
 highlight! link TSOperator Red
-highlight! link TSParameter Fg
+highlight! link TSParameter Orange
 highlight! link TSParameterReference Fg
 highlight! link TSPreProc PreProc
-highlight! link TSProperty Orange
+highlight! link TSProperty Orange1
 highlight! link TSPunctBracket Grey
 highlight! link TSPunctDelimiter Grey
 highlight! link TSPunctSpecial Yellow
@@ -593,7 +605,7 @@ if has('nvim-0.9.0')
   highlight! link @lsp.type.enumMember TSProperty
   highlight! link @lsp.type.events TSLabel
   highlight! link @lsp.type.function TSFunction
-  highlight! link @lsp.type.interface TSType
+  highlight! link @lsp.type.interface Aqua
   highlight! link @lsp.type.keyword TSKeyword
   highlight! link @lsp.type.macro TSConstMacro
   highlight! link @lsp.type.method TSMethod

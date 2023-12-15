@@ -75,12 +75,15 @@ function! sonokai#get_palette(style, colors_override)
           \ 'fg':         ['#A9B7C6',   '250'],
           \ 'red':        ['#F92672',   '203'],
           \ 'orange':     ['#FD971F',   '215'],
+          \ 'orange1':    ['#CF8822',   '215'],
           \ 'yellow':     ['#E6DB74',   '179'],
           \ 'green':      ['#A6E22E',   '107'],
+          \ 'green1':     ['#A8C026',   '179'],
+          \ 'aqua':       ['#0ED38C',   '110'],
           \ 'blue':       ['#4186F8',   '110'],
           \ 'purple':     ['#AE81FF',   '176'],
-          \ 'grey':       ['#848089',   '246'],
-          \ 'grey_dim':   ['#605d68',   '240'],
+          \ 'grey':       ['#808080',   '246'],
+          \ 'grey_dim':   ['#606060',   '240'],
           \ 'none':       ['NONE',      'NONE']
           \ }
   elseif a:style ==# 'shusia'
