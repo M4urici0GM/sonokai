@@ -80,6 +80,7 @@ function! sonokai#get_palette(style, colors_override)
           \ 'green':      ['#A6E22E',   '107'],
           \ 'green1':     ['#A8C026',   '179'],
           \ 'aqua':       ['#0ED38C',   '110'],
+          \ 'seashell':   ['#CBAD96',   '110'],
           \ 'blue':       ['#4186F8',   '110'],
           \ 'purple':     ['#AE81FF',   '176'],
           \ 'grey':       ['#808080',   '246'],
