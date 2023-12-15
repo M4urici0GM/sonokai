@@ -1,4 +1,4 @@
------------------------------------------------------------------------------
+" -----------------------------------------------------------------------------
 " Name:         Sonokai
 " Description:  High Contrast & Vivid Color Scheme based on Monokai Pro
 " Author:       Sainnhepark <i@sainnhe.dev>
