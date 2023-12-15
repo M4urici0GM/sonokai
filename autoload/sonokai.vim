@@ -54,10 +54,6 @@ function! sonokai#get_palette(style, colors_override)
           \ 'purple':     ['#b39df3',   '176'],
           \ 'grey':       ['#7f8490',   '246'],
           \ 'grey_dim':   ['#595f6f',   '240'],
-          \ 'orange1':    ['#CF8822',   '215'],
-          \ 'green1':     ['#A8C026',   '179'],
-          \ 'aqua':       ['#0ED38C',   '110'],
-          \ 'linen':      ['#CBAD96',   '110'],
           \ 'none':       ['NONE',      'NONE']
           \ }
   elseif a:style ==# 'gap'
@@ -83,9 +79,11 @@ function! sonokai#get_palette(style, colors_override)
           \ 'yellow':     ['#E6DB74',   '179'],
           \ 'green':      ['#A6E22E',   '107'],
           \ 'green1':     ['#A8C026',   '179'],
-          \ 'aqua':       ['#0ED38C',   '110'],
+          \ 'cyan':       ['#0ED38C',   '110'],
+          \ 'cyan1':      ['#20999d',   '179'],
           \ 'linen':      ['#CBAD96',   '110'],
           \ 'blue':       ['#4186F8',   '110'],
+          \ 'aqua':       ['#66D9EF',   '110'],
           \ 'purple':     ['#AE81FF',   '176'],
           \ 'grey':       ['#808080',   '246'],
           \ 'grey_dim':   ['#606060',   '240'],

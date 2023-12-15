@@ -277,8 +277,10 @@ call sonokai#highlight('Yellow', s:palette.yellow, s:palette.none)
 call sonokai#highlight('Green', s:palette.green, s:palette.none)
 call sonokai#highlight('Green1', s:palette.green1, s:palette.none)
 call sonokai#highlight('Blue', s:palette.blue, s:palette.none)
-call sonokai#highlight('Linen', s:palette.linen, s:palette.none)
 call sonokai#highlight('Aqua', s:palette.aqua, s:palette.none)
+call sonokai#highlight('Linen', s:palette.linen, s:palette.none)
+call sonokai#highlight('Cyan', s:palette.cyan, s:palette.none)
+call sonokai#highlight('Cyan1', s:palette.cyan1, s:palette.none)
 call sonokai#highlight('Purple', s:palette.purple, s:palette.none)
 if s:configuration.enable_italic
   call sonokai#highlight('RedItalic', s:palette.red, s:palette.none, 'italic')
@@ -288,8 +290,10 @@ if s:configuration.enable_italic
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none, 'italic')
   call sonokai#highlight('Green1Italic', s:palette.green1, s:palette.none, 'italic')
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none, 'italic')
-  call sonokai#highlight('LinenItalic', s:palette.linen, s:palette.none, 'italic')
   call sonokai#highlight('AquaItalic', s:palette.aqua, s:palette.none, 'italic')
+  call sonokai#highlight('LinenItalic', s:palette.linen, s:palette.none, 'italic')
+  call sonokai#highlight('CyanItalic', s:palette.cyan, s:palette.none, 'italic')
+  call sonokai#highlight('Cyan1Italic', s:palette.cyan1, s:palette.none, 'italic')
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none, 'italic')
 else
   call sonokai#highlight('RedItalic', s:palette.red, s:palette.none)
@@ -299,8 +303,10 @@ else
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none)
   call sonokai#highlight('Green1Italic', s:palette.green1, s:palette.none)
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none)
-  call sonokai#highlight('LinenItalic', s:palette.linen, s:palette.none)
   call sonokai#highlight('AquaItalic', s:palette.aqua, s:palette.none)
+  call sonokai#highlight('LinenItalic', s:palette.linen, s:palette.none)
+  call sonokai#highlight('CyanItalic', s:palette.cyan, s:palette.none)
+  call sonokai#highlight('Cyan1Italic', s:palette.cyan1, s:palette.none)
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none)
 endif
 call sonokai#highlight('RedSign', s:palette.red, s:palette.none)
@@ -310,8 +316,10 @@ call sonokai#highlight('YellowSign', s:palette.yellow, s:palette.none)
 call sonokai#highlight('GreenSign', s:palette.green, s:palette.none)
 call sonokai#highlight('Green1Sign', s:palette.green1, s:palette.none)
 call sonokai#highlight('BlueSign', s:palette.blue, s:palette.none)
-call sonokai#highlight('LinenSign', s:palette.linen, s:palette.none)
 call sonokai#highlight('AquaSign', s:palette.aqua, s:palette.none)
+call sonokai#highlight('LinenSign', s:palette.linen, s:palette.none)
+call sonokai#highlight('CyanSign', s:palette.cyan, s:palette.none)
+call sonokai#highlight('Cyan1Sign', s:palette.cyan1, s:palette.none)
 call sonokai#highlight('PurpleSign', s:palette.purple, s:palette.none)
 if s:configuration.diagnostic_text_highlight
   call sonokai#highlight('ErrorText', s:palette.none, s:palette.diff_red, 'undercurl', s:palette.red)
@@ -366,7 +374,7 @@ endif
 let g:sonokai_lsp_kind_color = [
       \ ["Array", "Yellow"],
       \ ["Boolean", "Yellow"],
-      \ ["Class", "Blue"],
+      \ ["Class", "Aqua"],
       \ ["Color", "Yellow"],
       \ ["Constant", "Orange"],
       \ ["Constructor", "Green"],
@@ -378,7 +386,7 @@ let g:sonokai_lsp_kind_color = [
       \ ["File", "Green"],
       \ ["Folder", "Yellow"],
       \ ["Function", "Green"],
-      \ ["Interface", "Aqua"],
+      \ ["Interface", "Cyan"],
       \ ["Key", "Red"],
       \ ["Keyword", "Red"],
       \ ["Method", "Green"],
@@ -393,9 +401,9 @@ let g:sonokai_lsp_kind_color = [
       \ ["Reference", "Yellow"],
       \ ["Snippet", "Yellow"],
       \ ["String", "Yellow"],
-      \ ["Struct", "Blue"],
+      \ ["Struct", "Aqua"],
       \ ["Text", "Fg"],
-      \ ["TypeParameter", "Blue"],
+      \ ["TypeParameter", "Aqua"],
       \ ["Unit", "Purple"],
       \ ["Value", "Purple"],
       \ ["Variable", "Linen"],
@@ -410,7 +418,7 @@ if ((has('termguicolors') && &termguicolors) || has('gui_running')) && !s:config
         \ 'red':             s:palette.red,
         \ 'yellow':          s:palette.yellow,
         \ 'green':           s:palette.green,
-        \ 'cyan':            s:palette.orange,
+        \ 'cyan':            s:palette.cyan,
         \ 'blue':            s:palette.blue,
         \ 'purple':          s:palette.purple,
         \ 'white':           s:palette.fg,
@@ -450,16 +458,16 @@ call sonokai#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline
 call sonokai#highlight('TSNote', s:palette.bg0, s:palette.green, 'bold')
 call sonokai#highlight('TSWarning', s:palette.bg0, s:palette.yellow, 'bold')
 call sonokai#highlight('TSDanger', s:palette.bg0, s:palette.red, 'bold')
-highlight! link TSAnnotation BlueItalic
-highlight! link TSAttribute BlueItalic
+highlight! link TSAnnotation AquaItalic
+highlight! link TSAttribute AquaItalic
 highlight! link TSBoolean Purple
 highlight! link TSCharacter Yellow
 highlight! link TSCharacterSpecial SpecialChar
 highlight! link TSComment Comment
 highlight! link TSConditional Red
-highlight! link TSConstBuiltin PurpleItalic
+highlight! link TSConstBuiltin Cyan1Italic
 highlight! link TSConstMacro PurpleItalic
-highlight! link TSConstant Fg
+highlight! link TSConstant Blue
 highlight! link TSConstructor Green
 highlight! link TSDebug Debug
 highlight! link TSDefine Define
@@ -469,7 +477,7 @@ highlight! link TSError Error
 highlight! link TSException Red
 highlight! link TSField Orange1
 highlight! link TSFloat Purple
-highlight! link TSFuncBuiltin Green
+highlight! link TSFuncBuiltin Cyan1
 highlight! link TSFuncMacro Green
 highlight! link TSFunction Green
 highlight! link TSFunctionCall Green
@@ -510,13 +518,13 @@ highlight! link TSText Green
 highlight! link TSTextReference Constant
 highlight! link TSTitle Title
 highlight! link TSTodo Todo
-highlight! link TSType BlueItalic
-highlight! link TSTypeBuiltin BlueItalic
-highlight! link TSTypeDefinition BlueItalic
+highlight! link TSType CyanItalic
+highlight! link TSTypeBuiltin Cyan1
+highlight! link TSTypeDefinition AquaItalic
 highlight! link TSTypeQualifier Red
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Linen
-highlight! link TSVariableBuiltin PurpleItalic
+highlight! link TSVariableBuiltin CyanItalic
 if has('nvim-0.8.0')
   highlight! link @annotation TSAnnotation
   highlight! link @attribute TSAttribute
@@ -609,7 +617,7 @@ if has('nvim-0.9.0')
   highlight! link @lsp.type.enumMember TSProperty
   highlight! link @lsp.type.events TSLabel
   highlight! link @lsp.type.function TSFunction
-  highlight! link @lsp.type.interface Aqua
+  highlight! link @lsp.type.interface Cyan
   highlight! link @lsp.type.keyword TSKeyword
   highlight! link @lsp.type.macro TSConstMacro
   highlight! link @lsp.type.method TSMethod
