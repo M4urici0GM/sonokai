@@ -494,7 +494,7 @@ highlight! link TSMethodCall Green
 highlight! link TSNamespace Fg
 highlight! link TSNone Fg
 highlight! link TSNumber Purple
-highlight! link TSOperator Red
+highlight! link TSOperator Fg
 highlight! link TSParameter Orange
 highlight! link TSParameterReference Fg
 highlight! link TSPreProc PreProc
