@@ -277,7 +277,7 @@ call sonokai#highlight('Yellow', s:palette.yellow, s:palette.none)
 call sonokai#highlight('Green', s:palette.green, s:palette.none)
 call sonokai#highlight('Green1', s:palette.green1, s:palette.none)
 call sonokai#highlight('Blue', s:palette.blue, s:palette.none)
-call sonokai#highlight('Seashell', s:palette.seashell, s:palette.none)
+call sonokai#highlight('Linen', s:palette.linen, s:palette.none)
 call sonokai#highlight('Aqua', s:palette.aqua, s:palette.none)
 call sonokai#highlight('Purple', s:palette.purple, s:palette.none)
 if s:configuration.enable_italic
@@ -288,7 +288,7 @@ if s:configuration.enable_italic
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none, 'italic')
   call sonokai#highlight('Green1Italic', s:palette.green1, s:palette.none, 'italic')
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none, 'italic')
-  call sonokai#highlight('SeashellItalic', s:palette.seashell, s:palette.none, 'italic')
+  call sonokai#highlight('LinenItalic', s:palette.linen, s:palette.none, 'italic')
   call sonokai#highlight('AquaItalic', s:palette.aqua, s:palette.none, 'italic')
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none, 'italic')
 else
@@ -299,7 +299,7 @@ else
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none)
   call sonokai#highlight('Green1Italic', s:palette.green1, s:palette.none)
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none)
-  call sonokai#highlight('SeashellItalic', s:palette.seashell, s:palette.none)
+  call sonokai#highlight('LinenItalic', s:palette.linen, s:palette.none)
   call sonokai#highlight('AquaItalic', s:palette.aqua, s:palette.none)
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none)
 endif
@@ -310,7 +310,7 @@ call sonokai#highlight('YellowSign', s:palette.yellow, s:palette.none)
 call sonokai#highlight('GreenSign', s:palette.green, s:palette.none)
 call sonokai#highlight('Green1Sign', s:palette.green1, s:palette.none)
 call sonokai#highlight('BlueSign', s:palette.blue, s:palette.none)
-call sonokai#highlight('SeashellSign', s:palette.seashell, s:palette.none)
+call sonokai#highlight('LinenSign', s:palette.linen, s:palette.none)
 call sonokai#highlight('AquaSign', s:palette.aqua, s:palette.none)
 call sonokai#highlight('PurpleSign', s:palette.purple, s:palette.none)
 if s:configuration.diagnostic_text_highlight
@@ -398,7 +398,7 @@ let g:sonokai_lsp_kind_color = [
       \ ["TypeParameter", "Blue"],
       \ ["Unit", "Purple"],
       \ ["Value", "Purple"],
-      \ ["Variable", "Seashell"],
+      \ ["Variable", "Linen"],
       \ ]
 " 
 " 
@@ -515,7 +515,7 @@ highlight! link TSTypeBuiltin BlueItalic
 highlight! link TSTypeDefinition BlueItalic
 highlight! link TSTypeQualifier Red
 highlight! link TSURI markdownUrl
-highlight! link TSVariable Seashell
+highlight! link TSVariable 
 highlight! link TSVariableBuiltin PurpleItalic
 if has('nvim-0.8.0')
   highlight! link @annotation TSAnnotation
