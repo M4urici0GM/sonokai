@@ -518,7 +518,7 @@ highlight! link TSText Green
 highlight! link TSTextReference Constant
 highlight! link TSTitle Title
 highlight! link TSTodo Todo
-highlight! link TSType AqyaItalic
+highlight! link TSType AquaItalic
 highlight! link TSTypeBuiltin Cyan1
 highlight! link TSTypeDefinition AquaItalic
 highlight! link TSTypeQualifier Red
