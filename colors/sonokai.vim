@@ -515,7 +515,7 @@ highlight! link TSTypeBuiltin BlueItalic
 highlight! link TSTypeDefinition BlueItalic
 highlight! link TSTypeQualifier Red
 highlight! link TSURI markdownUrl
-highlight! link TSVariable 
+highlight! link TSVariable Linen
 highlight! link TSVariableBuiltin PurpleItalic
 if has('nvim-0.8.0')
   highlight! link @annotation TSAnnotation
