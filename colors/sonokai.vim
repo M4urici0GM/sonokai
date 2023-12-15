@@ -518,7 +518,7 @@ highlight! link TSText Green
 highlight! link TSTextReference Constant
 highlight! link TSTitle Title
 highlight! link TSTodo Todo
-highlight! link TSType CyanItalic
+highlight! link TSType AqyaItalic
 highlight! link TSTypeBuiltin Cyan1
 highlight! link TSTypeDefinition AquaItalic
 highlight! link TSTypeQualifier Red
@@ -659,7 +659,7 @@ highlight! link CocNotificationProgress Green
 highlight! link CocNotificationButton PmenuSel
 highlight! link CocSemClass TSType
 highlight! link CocSemEnum TSType
-highlight! link CocSemInterface TSType
+highlight! link CocSemInterface Cyan
 highlight! link CocSemStruct TSType
 highlight! link CocSemTypeParameter TSType
 highlight! link CocSemVariable TSVariable
@@ -720,7 +720,7 @@ highlight! link lspInlayHintsParameter LineNr
 highlight! link LspSemanticType TSType
 highlight! link LspSemanticClass TSType
 highlight! link LspSemanticEnum TSType
-highlight! link LspSemanticInterface TSType
+highlight! link LspSemanticInterface Cyan
 highlight! link LspSemanticStruct TSType
 highlight! link LspSemanticTypeParameter TSType
 highlight! link LspSemanticParameter TSParameter
