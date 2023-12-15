@@ -1,7 +1,7 @@
 " =============================================================================
 " URL: https://github.com/sainnhe/sonokai
 " Filename: autoload/sonokai.vim
-Author: sainnhe
+" Author: sainnhe
 " Email: i@sainnhe.dev
 " License: MIT License
 " =============================================================================
