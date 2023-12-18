@@ -1,4 +1,4 @@
-" -----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 " Name:         Sonokai
 " Description:  High Contrast & Vivid Color Scheme based on Monokai Pro
 " Author:       Sainnhepark <i@sainnhe.dev>
@@ -385,11 +385,11 @@ let g:sonokai_lsp_kind_color = [
       \ ["Field", "Orange1"],
       \ ["File", "Green"],
       \ ["Folder", "Yellow"],
-      \ ["Function", "Green"],
+      \ ["Function", "GreenItalic"],
       \ ["Interface", "Cyan"],
       \ ["Key", "Red"],
       \ ["Keyword", "Red"],
-      \ ["Method", "Green"],
+      \ ["Method", "GreenItalic"],
       \ ["Module", "Blue"],
       \ ["Namespace", "Red"],
       \ ["Null", "Yellow"],
@@ -479,8 +479,8 @@ highlight! link TSField Orange1
 highlight! link TSFloat Purple
 highlight! link TSFuncBuiltin Cyan1
 highlight! link TSFuncMacro Green
-highlight! link TSFunction Green
-highlight! link TSFunctionCall Green
+highlight! link TSFunction GreenItalic
+highlight! link TSFunctionCall GreenItalic
 highlight! link TSInclude Red
 highlight! link TSKeyword Red
 highlight! link TSKeywordFunction Red
@@ -489,8 +489,8 @@ highlight! link TSKeywordReturn Red
 highlight! link TSLabel Red
 highlight! link TSLiteral String
 highlight! link TSMath Yellow
-highlight! link TSMethod Green
-highlight! link TSMethodCall Green
+highlight! link TSMethod GreenItalic
+highlight! link TSMethodCall GreenItalic
 highlight! link TSNamespace Fg
 highlight! link TSNone Fg
 highlight! link TSNumber Purple
