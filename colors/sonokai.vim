@@ -90,7 +90,7 @@ call sonokai#highlight('DiffChange', s:palette.none, s:palette.diff_blue)
 call sonokai#highlight('DiffDelete', s:palette.none, s:palette.diff_red)
 call sonokai#highlight('DiffText', s:palette.bg0, s:palette.blue)
 call sonokai#highlight('Directory', s:palette.green, s:palette.none)
-call sonokai#highlight('ErrorMsg', s:palette.red2, s:palette.none, 'bold,underline')
+call sonokai#highlight('ErrorMsg', s:palette.red1, s:palette.none, 'bold,underline')
 call sonokai#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
 call sonokai#highlight('ModeMsg', s:palette.fg, s:palette.none, 'bold')
 call sonokai#highlight('MoreMsg', s:palette.blue, s:palette.none, 'bold')
@@ -212,7 +212,7 @@ if has('nvim')
   highlight! link LspCodeLensSeparator VirtualTextHint
   highlight! link LspSignatureActiveParameter Search
   highlight! link TermCursor Cursor
-  highlight! link healthError Red2
+  highlight! link healthError Red1
   highlight! link healthSuccess Green
   highlight! link healthWarning Yellow
 endif
@@ -242,7 +242,7 @@ call sonokai#highlight('Conditional', s:palette.red, s:palette.none)
 call sonokai#highlight('Repeat', s:palette.red, s:palette.none)
 call sonokai#highlight('Statement', s:palette.red, s:palette.none)
 call sonokai#highlight('Macro', s:palette.purple, s:palette.none)
-call sonokai#highlight('Error', s:palette.red2, s:palette.none)
+call sonokai#highlight('Error', s:palette.red1, s:palette.none)
 call sonokai#highlight('Label', s:palette.purple, s:palette.none)
 call sonokai#highlight('Special', s:palette.purple, s:palette.none)
 call sonokai#highlight('SpecialChar', s:palette.purple, s:palette.none)
@@ -271,7 +271,7 @@ call sonokai#highlight('Underlined', s:palette.none, s:palette.none, 'underline'
 call sonokai#highlight('Fg', s:palette.fg, s:palette.none)
 call sonokai#highlight('Grey', s:palette.grey, s:palette.none)
 call sonokai#highlight('Red', s:palette.red, s:palette.none)
-call sonokai#highlight('Red2', s:palette.red2, s:palette.none)
+call sonokai#highlight('Red1', s:palette.red1, s:palette.none)
 call sonokai#highlight('Orange', s:palette.orange, s:palette.none)
 call sonokai#highlight('Orange1', s:palette.orange1, s:palette.none)
 call sonokai#highlight('Yellow', s:palette.yellow, s:palette.none)
@@ -285,7 +285,7 @@ call sonokai#highlight('Cyan1', s:palette.cyan1, s:palette.none)
 call sonokai#highlight('Purple', s:palette.purple, s:palette.none)
 if s:configuration.enable_italic
   call sonokai#highlight('RedItalic', s:palette.red, s:palette.none, 'italic')
-  call sonokai#highlight('Red2Italic', s:palette.red2, s:palette.none, 'italic')
+  call sonokai#highlight('Red1Italic', s:palette.red1, s:palette.none, 'italic')
   call sonokai#highlight('OrangeItalic', s:palette.orange, s:palette.none, 'italic')
   call sonokai#highlight('Orange1Italic', s:palette.orange1, s:palette.none, 'italic')
   call sonokai#highlight('YellowItalic', s:palette.yellow, s:palette.none, 'italic')
@@ -299,7 +299,7 @@ if s:configuration.enable_italic
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none, 'italic')
 else
   call sonokai#highlight('RedItalic', s:palette.red, s:palette.none)
-  call sonokai#highlight('Red2Italic', s:palette.red2, s:palette.none)
+  call sonokai#highlight('Red1Italic', s:palette.red1, s:palette.none)
   call sonokai#highlight('OrangeItalic', s:palette.orange, s:palette.none)
   call sonokai#highlight('Orange1Italic', s:palette.orange1, s:palette.none)
   call sonokai#highlight('YellowItalic', s:palette.yellow, s:palette.none)
@@ -313,7 +313,7 @@ else
   call sonokai#highlight('PurpleItalic', s:palette.purple, s:palette.none)
 endif
 call sonokai#highlight('RedSign', s:palette.red, s:palette.none)
-call sonokai#highlight('Red2Sign', s:palette.red2, s:palette.none)
+call sonokai#highlight('Red1Sign', s:palette.red1, s:palette.none)
 call sonokai#highlight('OrangeSign', s:palette.orange, s:palette.none)
 call sonokai#highlight('Orange1Sign', s:palette.orange1, s:palette.none)
 call sonokai#highlight('YellowSign', s:palette.yellow, s:palette.none)
@@ -326,18 +326,18 @@ call sonokai#highlight('CyanSign', s:palette.cyan, s:palette.none)
 call sonokai#highlight('Cyan1Sign', s:palette.cyan1, s:palette.none)
 call sonokai#highlight('PurpleSign', s:palette.purple, s:palette.none)
 if s:configuration.diagnostic_text_highlight
-  call sonokai#highlight('ErrorText', s:palette.none, s:palette.diff_red, 'undercurl', s:palette.red2)
+  call sonokai#highlight('ErrorText', s:palette.none, s:palette.diff_red, 'undercurl', s:palette.red1)
   call sonokai#highlight('WarningText', s:palette.none, s:palette.diff_yellow, 'undercurl', s:palette.yellow)
   call sonokai#highlight('InfoText', s:palette.none, s:palette.diff_blue, 'undercurl', s:palette.blue)
   call sonokai#highlight('HintText', s:palette.none, s:palette.diff_green, 'undercurl', s:palette.green)
 else
-  call sonokai#highlight('ErrorText', s:palette.none, s:palette.none, 'undercurl', s:palette.red2)
+  call sonokai#highlight('ErrorText', s:palette.none, s:palette.none, 'undercurl', s:palette.red1)
   call sonokai#highlight('WarningText', s:palette.none, s:palette.none, 'undercurl', s:palette.yellow)
   call sonokai#highlight('InfoText', s:palette.none, s:palette.none, 'undercurl', s:palette.blue)
   call sonokai#highlight('HintText', s:palette.none, s:palette.none, 'undercurl', s:palette.green)
 endif
 if s:configuration.diagnostic_line_highlight
-  call sonokai#highlight('ErrorLine', s:palette.none, s:palette.diff_red2)
+  call sonokai#highlight('ErrorLine', s:palette.none, s:palette.diff_red)
   call sonokai#highlight('WarningLine', s:palette.none, s:palette.diff_yellow)
   call sonokai#highlight('InfoLine', s:palette.none, s:palette.diff_blue)
   call sonokai#highlight('HintLine', s:palette.none, s:palette.diff_green)
@@ -354,16 +354,16 @@ if s:configuration.diagnostic_virtual_text ==# 'grey'
   highlight! link VirtualTextHint Grey
 elseif s:configuration.diagnostic_virtual_text ==# 'colored'
   highlight! link VirtualTextWarning Yellow
-  highlight! link VirtualTextError Red2
+  highlight! link VirtualTextError Red1
   highlight! link VirtualTextInfo Blue
   highlight! link VirtualTextHint Green
 else
   call sonokai#highlight('VirtualTextWarning', s:palette.yellow, s:palette.diff_yellow)
-  call sonokai#highlight('VirtualTextError', s:palette.red2, s:palette.diff_red)
+  call sonokai#highlight('VirtualTextError', s:palette.red1, s:palette.diff_red)
   call sonokai#highlight('VirtualTextInfo', s:palette.blue, s:palette.diff_blue)
   call sonokai#highlight('VirtualTextHint', s:palette.green, s:palette.diff_green)
 endif
-call sonokai#highlight('ErrorFloat', s:palette.red2, s:palette.none)
+call sonokai#highlight('ErrorFloat', s:palette.red1, s:palette.none)
 call sonokai#highlight('WarningFloat', s:palette.yellow, s:palette.none)
 call sonokai#highlight('InfoFloat', s:palette.blue, s:palette.none)
 call sonokai#highlight('HintFloat', s:palette.green, s:palette.none)
