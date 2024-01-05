@@ -609,7 +609,7 @@ if has('nvim-0.8.0')
   highlight! link @variable TSVariable
   highlight! link @variable.builtin TSVariableBuiltin
 endif
-if has('nvim-0.9.4')
+if has('nvim-0.9.0')
   highlight! link @lsp.type.class TSType
   highlight! link @lsp.type.comment TSComment
   highlight! link @lsp.type.decorator TSFunction
