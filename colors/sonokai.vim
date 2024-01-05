@@ -609,7 +609,7 @@ if has('nvim-0.8.0')
   highlight! link @variable TSVariable
   highlight! link @variable.builtin TSVariableBuiltin
 endif
-if has('nvim-0.9.0')
+if has('nvim-0.9.4')
   highlight! link @lsp.type.class TSType
   highlight! link @lsp.type.comment TSComment
   highlight! link @lsp.type.decorator TSFunction
@@ -2035,7 +2035,7 @@ highlight! link typescriptEnum BlueItalic
 highlight! link typescriptIdentifierName Fg
 highlight! link typescriptProp Fg
 highlight! link typescriptCall Fg
-highlight! link typescriptInterfaceName BlueItalic
+highlight! link typescriptInterfaceName CyanItalic
 highlight! link typescriptEndColons Fg
 highlight! link typescriptMember Fg
 highlight! link typescriptMemberOptionality Red
@@ -2051,7 +2051,7 @@ highlight! link typescriptUnaryOp Red
 highlight! link typescriptFuncComma Fg
 highlight! link typescriptClassName BlueItalic
 highlight! link typescriptClassHeritage BlueItalic
-highlight! link typescriptInterfaceHeritage BlueItalic
+highlight! link typescriptInterfaceHeritage CyanItalic
 highlight! link typescriptIdentifier OrangeItalic
 highlight! link typescriptGlobal BlueItalic
 highlight! link typescriptOperator Red
