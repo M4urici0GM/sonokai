@@ -51,7 +51,7 @@ function! sonokai#get_palette(style, colors_override)
           \ 'orange':     ['#FD971F',   '215'],
           \ 'orange1':    ['#CF8822',   '215'],
           \ 'yellow':     ['#E6DB74',   '179'],
-          \ 'green':      ['#FB7385',   '107'],
+          \ 'green':      ['#98C379',   '107'],
           \ 'green1':     ['#FB7385',   '179'],
           \ 'cyan':       ['#0ED38C',   '110'],
           \ 'cyan1':      ['#20999d',   '179'],
