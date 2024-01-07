@@ -48,7 +48,7 @@ function! sonokai#get_palette(style, colors_override)
           \ 'fg':         ['#A9B7C6',   '250'],
           \ 'red':        ['#FB7385',   '203'], 
           \ 'red1':       ['#FB7385',   '203'],
-          \ 'orange':     ['#FD971F',   '215'],
+          \ 'orange':     ['#facc98',   '215'],
           \ 'orange1':    ['#CF8822',   '215'],
           \ 'yellow':     ['#E5BC66',   '179'],
           \ 'green':      ['#98C379',   '107'],
