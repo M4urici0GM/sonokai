@@ -58,7 +58,7 @@ else
   call sonokai#highlight('FoldColumn', s:palette.grey_dim, s:palette.none)
 endif
 call sonokai#highlight('SignColumn', s:palette.fg, s:palette.none)
-call sonokai#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
+call sonokai#highlight('IncSearch', s:palette.bg0, s:palette.yellow)
 call sonokai#highlight('Search', s:palette.bg0, s:palette.bg_green)
 highlight! link CurSearch IncSearch
 call sonokai#highlight('ColorColumn', s:palette.none, s:palette.bg1)
@@ -2787,4 +2787,4 @@ highlight! link helpSectionDelim Grey
 " syn_end 
 " 
 
-" vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr=,:
+" vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker fmr={{{,}}}:
