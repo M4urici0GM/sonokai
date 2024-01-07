@@ -278,7 +278,6 @@ call sonokai#highlight('Yellow', s:palette.yellow, s:palette.none)
 call sonokai#highlight('Green', s:palette.green, s:palette.none)
 call sonokai#highlight('Green1', s:palette.green1, s:palette.none)
 call sonokai#highlight('Blue', s:palette.blue, s:palette.none)
-call sonokai#highlight('Aqua', s:palette.aqua, s:palette.none)
 call sonokai#highlight('Linen', s:palette.linen, s:palette.none)
 call sonokai#highlight('Cyan', s:palette.cyan, s:palette.none)
 call sonokai#highlight('Cyan1', s:palette.cyan1, s:palette.none)
@@ -292,7 +291,6 @@ if s:configuration.enable_italic
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none, 'italic')
   call sonokai#highlight('Green1Italic', s:palette.green1, s:palette.none, 'italic')
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none, 'italic')
-  call sonokai#highlight('AquaItalic', s:palette.aqua, s:palette.none, 'italic')
   call sonokai#highlight('LinenItalic', s:palette.linen, s:palette.none, 'italic')
   call sonokai#highlight('CyanItalic', s:palette.cyan, s:palette.none, 'italic')
   call sonokai#highlight('Cyan1Italic', s:palette.cyan1, s:palette.none, 'italic')
@@ -306,7 +304,6 @@ else
   call sonokai#highlight('GreenItalic', s:palette.green, s:palette.none)
   call sonokai#highlight('Green1Italic', s:palette.green1, s:palette.none)
   call sonokai#highlight('BlueItalic', s:palette.blue, s:palette.none)
-  call sonokai#highlight('AquaItalic', s:palette.aqua, s:palette.none)
   call sonokai#highlight('LinenItalic', s:palette.linen, s:palette.none)
   call sonokai#highlight('CyanItalic', s:palette.cyan, s:palette.none)
   call sonokai#highlight('Cyan1Italic', s:palette.cyan1, s:palette.none)
@@ -320,7 +317,6 @@ call sonokai#highlight('YellowSign', s:palette.yellow, s:palette.none)
 call sonokai#highlight('GreenSign', s:palette.green, s:palette.none)
 call sonokai#highlight('Green1Sign', s:palette.green1, s:palette.none)
 call sonokai#highlight('BlueSign', s:palette.blue, s:palette.none)
-call sonokai#highlight('AquaSign', s:palette.aqua, s:palette.none)
 call sonokai#highlight('LinenSign', s:palette.linen, s:palette.none)
 call sonokai#highlight('CyanSign', s:palette.cyan, s:palette.none)
 call sonokai#highlight('Cyan1Sign', s:palette.cyan1, s:palette.none)
@@ -378,7 +374,7 @@ endif
 let g:sonokai_lsp_kind_color = [
       \ ["Array", "Yellow"],
       \ ["Boolean", "Yellow"],
-      \ ["Class", "Aqua"],
+      \ ["Class", "Blue"],
       \ ["Color", "Yellow"],
       \ ["Constant", "Orange"],
       \ ["Constructor", "Green"],
@@ -405,9 +401,9 @@ let g:sonokai_lsp_kind_color = [
       \ ["Reference", "Yellow"],
       \ ["Snippet", "Yellow"],
       \ ["String", "Yellow"],
-      \ ["Struct", "Aqua"],
+      \ ["Struct", "Blue"],
       \ ["Text", "Fg"],
-      \ ["TypeParameter", "Aqua"],
+      \ ["TypeParameter", "Blue"],
       \ ["Unit", "Purple"],
       \ ["Value", "Purple"],
       \ ["Variable", "Linen"],
@@ -462,8 +458,8 @@ call sonokai#highlight('TSUnderline', s:palette.none, s:palette.none, 'underline
 call sonokai#highlight('TSNote', s:palette.bg0, s:palette.green, 'bold')
 call sonokai#highlight('TSWarning', s:palette.bg0, s:palette.yellow, 'bold')
 call sonokai#highlight('TSDanger', s:palette.bg0, s:palette.red, 'bold')
-highlight! link TSAnnotation AquaItalic
-highlight! link TSAttribute AquaItalic
+highlight! link TSAnnotation BlueItalic
+highlight! link TSAttribute BlueItalic
 highlight! link TSBoolean Purple
 highlight! link TSCharacter Yellow
 highlight! link TSCharacterSpecial SpecialChar
@@ -522,9 +518,9 @@ highlight! link TSText Green
 highlight! link TSTextReference Constant
 highlight! link TSTitle Title
 highlight! link TSTodo Todo
-highlight! link TSType AquaItalic
+highlight! link TSType BlueItalic
 highlight! link TSTypeBuiltin Cyan1
-highlight! link TSTypeDefinition AquaItalic
+highlight! link TSTypeDefinition BlueItalic
 highlight! link TSTypeQualifier Red
 highlight! link TSURI markdownUrl
 highlight! link TSVariable Linen

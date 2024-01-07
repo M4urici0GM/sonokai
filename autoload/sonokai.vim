@@ -57,8 +57,7 @@ function! sonokai#get_palette(style, colors_override)
           \ 'cyan1':      ['#20999d',   '179'],
           \ 'linen':      ['#CBAD96',   '110'],
           \ 'blue':       ['#379AEF',   '110'],
-          \ 'aqua':       ['#61AFEF',   '110'],
-          \ 'purple':     ['#AE81FF',   '176'],
+          \ 'purple':     ['#CE95B8',   '176'],
           \ 'grey':       ['#5C6370',   '246'],
           \ 'grey_dim':   ['#606060',   '240'],
           \ 'none':       ['NONE',      'NONE']
